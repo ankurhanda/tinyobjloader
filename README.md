@@ -3,69 +3,11 @@ tinyobjloader{#mycopy}
 
 [![wercker status](https://app.wercker.com/status/495a3bac400212cdacdeb4dd9397bf4f/m "wercker status")](https://app.wercker.com/project/bykey/495a3bac400212cdacdeb4dd9397bf4f)
 
-More here: http://syoyo.github.io/tinyobjloader/
+Original source code here: http://syoyo.github.io/tinyobjloader/
 
 Tiny but poweful single file wavefront obj loader written in C++. No dependency except for C++ STL. It can parse 10M over polygons with moderate memory and time.
 
 Good for embedding .obj loader to your (global illumination) renderer ;-)
-
-What's new
-----------
-
-* Sep 14, 2014 : Add support for multi-material per object/group. Thanks Mykhailo!
-* Mar 17, 2014 : Fixed trim newline bugs. Thanks ardneran!
-* Apr 29, 2014 : Add API to read .obj from std::istream. Good for reading compressed .obj or connecting to procedural primitive generator. Thanks burnse!
-* Apr 21, 2014 : Define default material if no material definition exists in .obj. Thanks YarmUI!
-* Apr 10, 2014 : Add support for parsing 'illum' and 'd'/'Tr' statements. Thanks mmp!
-* Jan 27, 2014 : Added CMake project. Thanks bradc6!
-* Nov 26, 2013 : Performance optimization by NeuralSandwich. 9% improvement in his project, thanks!
-* Sep 12, 2013 : Added multiple .obj sticher example.
-
-Example
--------
-
-![Rungholt](https://github.com/syoyo/tinyobjloader/blob/master/images/rungholt.jpg?raw=true)
-
-tinyobjloader can successfully load 6M triangles Rungholt scene.
-http://graphics.cs.williams.edu/data/meshes.xml
-
-Use case
---------
-
-TinyObjLoader is successfully used in ...
-
-* bullet3 https://github.com/erwincoumans/bullet3
-* pbrt-v2 https://https://github.com/mmp/pbrt-v2
-* OpenGL game engine development http://swarminglogic.com/jotting/2013_10_gamedev01
-* mallie https://lighttransport.github.io/mallie
-* IBLBaker (Image Based Lighting Baker). http://www.derkreature.com/iblbaker/
-* Stanford CS148 http://web.stanford.edu/class/cs148/assignments/assignment3.pdf
-* Your project here!
-
-Features
---------
-
-* Group(parse multiple group name)
-* Vertex
-* Texcoord
-* Normal
-* Material
-  * Unknown material attributes are treated as key-value.
-
-Notes
------
-
-Polygon is converted into triangle.
-
-TODO
-----
-
-- [ ] Support quad polygon and some tags for OpenSubdiv http://graphics.pixar.com/opensubdiv/
-
-License
--------
-
-Licensed under 2 clause BSD.
 
 Usage
 -----
