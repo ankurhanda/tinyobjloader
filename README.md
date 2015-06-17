@@ -1,4 +1,4 @@
-tinyobjloader
+tinyobjloader{#mycopy}
 =============
 
 [![wercker status](https://app.wercker.com/status/495a3bac400212cdacdeb4dd9397bf4f/m "wercker status")](https://app.wercker.com/project/bykey/495a3bac400212cdacdeb4dd9397bf4f)
